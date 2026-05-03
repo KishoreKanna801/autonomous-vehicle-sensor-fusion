@@ -44,8 +44,8 @@ Sensor data (ultrasonic + IMU + encoders) is fused → processed in real-time us
 ![Circuit](Picture4.png)
 
 ### 📱 ML
-![ML](Picture2.jpg)
-![ML](Picture1.jpg)
+![ML](Picture2.jpeg)
+![ML](Picture1.jpeg)
 
 ## ⚡ Future Improvements
 - Improve dataset size for better ML accuracy
