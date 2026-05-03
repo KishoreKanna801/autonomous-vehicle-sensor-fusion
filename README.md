@@ -37,10 +37,15 @@ Sensor data (ultrasonic + IMU + encoders) is fused → processed in real-time us
 - Emergency override system to stop vehicle instantly
 
 ## 📸 Project Demo
-(Add images/videos here)
-- Vehicle setup
-- Sensor layout
-- Lane detection output
+### 🔧 Hardware Setup
+![Hardware](Picture3.jpg)
+
+### 🔌 Circuit Diagram
+![Circuit](Picture4.png)
+
+### 📱 ML
+![ML](Picture2.jpg)
+![ML](Picture1.jpg)
 
 ## ⚡ Future Improvements
 - Improve dataset size for better ML accuracy
