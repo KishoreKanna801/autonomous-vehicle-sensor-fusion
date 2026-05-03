@@ -1,3 +1,16 @@
+/*
+Project: Real-Time Autonomous Vehicle
+Author: Kishore Kanna P
+
+Description:
+Multi-threaded embedded system using QNX RTOS for autonomous navigation.
+Implements sensor fusion using ultrasonic sensors, IMU, and encoders.
+Includes obstacle detection, collision avoidance, and real-time motor control.
+
+Note:
+Hardware-specific configurations (GPIO base addresses, pin mappings) 
+may vary depending on platform and are simplified for demonstration.
+*/
 #include <stdio.h>
 #include <stdint.h>
 #include <unistd.h>
@@ -23,19 +36,12 @@ volatile int system_running = 0;
 
 char direction = 'S'; // F, L, R, B, S
 
-// ----------- THRESHOLDS -----------
-#define ULTRA_MIN 2
-#define ULTRA_MAX 400
-#define ULTRA_JUMP 50
-
-#define COLLISION_DIST 2.0
-#define OBSTACLE_DIST 10.0
-
-#define ACC_LIMIT 30.0
-#define ACC_JUMP 10.0
-
-#define SPEED_MAX 2.0
-#define SPEED_JUMP 1.0
+/*
+⚠️ Note:
+This implementation is a simplified representation of the full system.
+Certain hardware calibration, tuning parameters, and advanced optimizations
+are not included in this repository.
+*/
 
 // ----------- GPIO -----------
 void set_output(int pin){
